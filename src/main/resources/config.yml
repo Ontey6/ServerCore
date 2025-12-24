@@ -1,0 +1,28 @@
+# Options used by the JoinListener
+on-join:
+  # Teleports players to spawn when they join the server
+  teleport-to-spawn: true
+
+# Options used by the SpawnCommand
+spawn:
+  # Shows a text 'Spawn' in the actionbar
+  show-feedback: true
+
+  preventions:
+    - damage
+    - hunger
+    - block_break # core.spawn.bypass.block_break_prevention
+    - block_place # core.spawn.bypass.block_place_prevention
+    - drop # core.spawn.bypass.drop_prevention
+    - inventory_move # core.spawn.bypass.inventory_move_prevention
+    - block_ignite # core.spawn.bypass.block_ignite
+    - block_burn
+    - block_from_to
+    - block_fade
+    - block_physics
+    - block_spread
+    - entity_explode
+    - entity_induced_block_change
+
+# Shows debug console messages
+debug: false

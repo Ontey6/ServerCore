@@ -1,0 +1,5 @@
+name: ServerCore
+version: '1.0'
+main: com.ontey.serverCore.ServerCore
+api-version: '1.21'
+authors: [ Ontey ]
