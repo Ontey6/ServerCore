@@ -1,0 +1,144 @@
+'&cHerzregen':
+  ==: core.cosmetic.Cosmetic
+  count: 4
+  relative-location:
+    x: 0.0
+    y: 1.2
+    z: 0.0
+  material: HEART_OF_THE_SEA
+  particle: HEART
+  unlock-threshold: 720
+  offset: 0.6
+  name: '&cHerzregen'
+'&5Regenbogen':
+  ==: core.cosmetic.Cosmetic
+  count: 5
+  relative-location:
+    x: 0.0
+    y: 1.0
+    z: 0.0
+  material: AMETHYST_SHARD
+  particle: FLAME
+  unlock-threshold: 120
+  offset: 0.5
+  name: '&5Regenbogen'
+'&5Hexen-Zauber':
+  ==: core.cosmetic.Cosmetic
+  count: 6
+  relative-location:
+    x: 0.0
+    y: 1.0
+    z: 0.0
+  material: DIAMOND
+  particle: NOTE
+  unlock-threshold: 7200
+  offset: 0.4
+  name: '&5Hexen-Zauber'
+'&bVerzauberung':
+  ==: core.cosmetic.Cosmetic
+  count: 6
+  relative-location:
+    x: 0.0
+    y: 1.0
+    z: 0.0
+  material: ENCHANTING_TABLE
+  particle: CRIT
+  unlock-threshold: 4320
+  offset: 0.5
+  name: '&bVerzauberung'
+'&aMusiknoten':
+  ==: core.cosmetic.Cosmetic
+  count: 6
+  relative-location:
+    x: 0.0
+    y: 1.0
+    z: 0.0
+  material: NOTE_BLOCK
+  particle: NOTE
+  unlock-threshold: 300
+  offset: 0.3
+  name: '&aMusiknoten'
+'&7Wolken':
+  ==: core.cosmetic.Cosmetic
+  count: 6
+  relative-location:
+    x: 0.0
+    y: 1.1
+    z: 0.0
+  material: GLOWSTONE_DUST
+  particle: CLOUD
+  unlock-threshold: 1440
+  offset: 0.5
+  name: '&7Wolken'
+'&aGlücklich':
+  ==: core.cosmetic.Cosmetic
+  count: 6
+  relative-location:
+    x: 0.0
+    y: 1.1
+    z: 0.0
+  material: BLAZE_POWDER
+  particle: END_ROD
+  unlock-threshold: 2880
+  offset: 0.4
+  name: '&aGlücklich'
+'&6Feuer':
+  ==: core.cosmetic.Cosmetic
+  count: 5
+  relative-location:
+    x: 0.0
+    y: 1.0
+    z: 0.0
+  material: LAVA_BUCKET
+  particle: FLAME
+  unlock-threshold: 10
+  offset: 0.3
+  name: '&6Feuer'
+'&eSterne':
+  ==: core.cosmetic.Cosmetic
+  count: 3
+  relative-location:
+    x: 0.0
+    y: 1.0
+    z: 0.0
+  material: END_ROD
+  particle: END_ROD
+  unlock-threshold: 60
+  offset: 0.3
+  name: '&eSterne'
+'&cHerzen':
+  ==: core.cosmetic.Cosmetic
+  count: 3
+  relative-location:
+    x: 0.0
+    y: 1.0
+    z: 0.0
+  material: REDSTONE
+  particle: HEART
+  unlock-threshold: 0
+  offset: 0.3
+  name: '&cHerzen'
+'&bSchnee':
+  ==: core.cosmetic.Cosmetic
+  count: 5
+  relative-location:
+    x: 0.0
+    y: 1.0
+    z: 0.0
+  material: SNOWBALL
+  particle: SNOWFLAKE
+  unlock-threshold: 30
+  offset: 0.3
+  name: '&bSchnee'
+'&dFunken':
+  ==: core.cosmetic.Cosmetic
+  count: 8
+  relative-location:
+    x: 0.0
+    y: 1.0
+    z: 0.0
+  material: FIRE_CHARGE
+  particle: CRIT
+  unlock-threshold: 300
+  offset: 0.4
+  name: '&dFunken'

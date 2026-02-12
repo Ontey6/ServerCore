@@ -1,6 +1,6 @@
-package com.ontey.serverCore.log;
+package core.log;
 
-import static com.ontey.serverCore.ServerCore.logger;
+import static core.ServerCore.logger;
 
 public class CoreLogger {
    

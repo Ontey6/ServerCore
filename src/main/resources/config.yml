@@ -23,6 +23,3 @@ spawn:
     - block_spread
     - entity_explode
     - entity_induced_block_change
-
-# Shows debug console messages
-debug: false

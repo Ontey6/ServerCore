@@ -23,6 +23,15 @@ Permission to target other players: `core.command.spawn.target`
 Shows feedback in the actionbar.
 Togglable in the config: `spawn.show-feedback`
 
+## SetSpawn Command
+Sets the spawn of a world
+
+Usage: `/setspawn [position]`
+
+Permission: `core.command.setspawn`
+
+Permission to target other players: `core.command.setspawn.target`
+
 ## To spawn on join
 Players get teleported to spawn on join.
 

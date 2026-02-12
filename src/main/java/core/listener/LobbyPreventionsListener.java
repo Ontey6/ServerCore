@@ -1,6 +1,5 @@
-package com.ontey.serverCore.listener;
+package core.listener;
 
-import com.ontey.serverCore.manager.LobbyManager;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -11,21 +10,24 @@ import org.bukkit.event.player.*;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryDragEvent;
 
+import static core.manager.LobbyManager.lobbyManager;
+import static core.manager.SpawnInventoryManager.spawnInventoryManager;
+
 public class LobbyPreventionsListener implements Listener {
    
    @EventHandler
    public void onLobbyDamage(EntityDamageEvent event) {
-      if(LobbyManager.isActive("damage") && (event.getEntity() instanceof final Player p) && LobbyManager.isLobby(p.getWorld())) {
+      if(lobbyManager.isActive("damage") && (event.getEntity() instanceof final Player p) && lobbyManager.isLobby(p.getWorld())) {
          event.setCancelled(true);
          
          if(event.getCause() == EntityDamageEvent.DamageCause.VOID)
-            p.teleport(LobbyManager.getSpawnpoint());
+            p.teleport(lobbyManager.getSpawnpoint());
       }
    }
    
    @EventHandler
    public void onLobbyHungerLoss(FoodLevelChangeEvent event) {
-      if(LobbyManager.isActive("hunger") && event.getEntity() instanceof final Player p && LobbyManager.isLobby(p.getWorld()))
+      if(lobbyManager.isActive("hunger") && event.getEntity() instanceof final Player p && lobbyManager.isLobby(p.getWorld()))
          event.setCancelled(true);
    }
    
@@ -49,7 +51,7 @@ public class LobbyPreventionsListener implements Listener {
    
    @EventHandler
    public void onLobbyInventoryMove(InventoryClickEvent event) {
-      if(event.getWhoClicked() instanceof Player p && shouldCancel("inventory_move", p))
+      if(event.getWhoClicked() instanceof Player p && shouldCancel("inventory_move", p) && event.getSlot() != spawnInventoryManager.getFireworkSlot())
          event.setCancelled(true);
    }
    
@@ -110,10 +112,10 @@ public class LobbyPreventionsListener implements Listener {
    // helper methods
    
    private static boolean shouldCancel(String name, Player player) {
-      return LobbyManager.isActive(name) && !player.hasPermission("core.spawn.bypass." + name) && LobbyManager.isLobby(player.getWorld());
+      return lobbyManager.isActive(name) && !player.hasPermission("core.spawn.bypass." + name) && lobbyManager.isLobby(player.getWorld());
    }
    
    private static boolean shouldCancel(String name, World world) {
-      return LobbyManager.isActive(name) && LobbyManager.isLobby(world);
+      return lobbyManager.isActive(name) && lobbyManager.isLobby(world);
    }
 }
